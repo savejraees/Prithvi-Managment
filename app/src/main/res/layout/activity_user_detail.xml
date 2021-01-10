@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F0F0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Prithvi Management"/>
+
+    </androidx.appcompat.widget.Toolbar>
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_serviceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manoj"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center|left"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Father Name. :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="98180495555"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center|left"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chassis No. :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_chessNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email ID"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Engine No. :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_engineno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="address"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bread"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Registration No. :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_registration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Breed"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Asset Vehicle :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_asset_bajaj_vechele"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_cDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loan No. :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_loanNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Current Date"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_tv_appoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Appointment Date :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_appoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="₹2000"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_serviceCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Service Charge :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_serviceCharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="service Charge"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_usedWallete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wallete Amt:"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_usedWallete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="wallet amt"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_serviceStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Service Status :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_serviceStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="service Status"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_manyHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Service Many Hrs. :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_manyHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="service Many hrs"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_manyTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Service Many Time :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_manyTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="service Many Time"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_staffId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Staff ID :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_staffId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="staff ID"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_pinCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pin Code :"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_pinCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="pincode"
+                        android:textSize="14sp"
+                        android:gravity="center|left"
+                        android:fontFamily="@font/adamina"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>

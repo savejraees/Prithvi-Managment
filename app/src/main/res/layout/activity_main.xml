@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F0F0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:text="Prithvi Management"/>
+
+            <TextView
+                android:id="@+id/txtLogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="end"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editSearch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@drawable/edit"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="UP12"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_search_white"
+                android:textColorHint="#DDD8D8" />
+
+        <EditText
+                android:id="@+id/editSearchNumber"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@drawable/edit"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/roboto"
+                android:hint="1234"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_search_white"
+                android:textColorHint="#DDD8D8" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearch"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/rv_home_item"
+        android:orientation="vertical"
+        app:spanCount="2"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
